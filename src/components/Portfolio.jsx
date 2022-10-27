@@ -1,7 +1,7 @@
 import React from "react";
 import bonsai from "../assets/portfolio/bonsai.png";
-import cronometer from "../assets/portfolio/cronometer.jpg"
-import timley from "../assets/portfolio/timley.jpg"
+import cronometer from "../assets/portfolio/cronometer.jpg";
+import timley from "../assets/portfolio/timley.jpg";
 
 const Portfolio = () => {
   const portfolios = [
@@ -9,28 +9,28 @@ const Portfolio = () => {
       id: 1,
       src: cronometer,
       title: "Cronometer Clone",
-      tag: "This is a freelancing management website.This was a team project where I with my teammates had created.",
-      stack:"React,Chakra UI, CSS,JavaScript",
-      link:"https://myreact-project.netlify.app",
-      github:"https://github.com/masum-raja/Cronometer"
+      tag: "This is a nutrition tracking website. This was a individual project. I implemented some functionalities like login & signup user data authentication, User can track BMI & daily calorie intake.",
+      stack: "React, Chakra UI, CSS, JavaScript",
+      link: "https://myreact-project.netlify.app",
+      github: "https://github.com/masum-raja/Cronometer",
     },
     {
       id: 2,
       src: bonsai,
       title: "HelloBonsai Clone",
-      tag: "This is a freelancing management website.This was a team project where I with my teammates had created.",
-      stack:"HTML, CSS, JavaScript",
-      link:"https://monumental-crisp-761be5.netlify.app",
-      github:"https://github.com/masum-raja/HelloBonsai"
+      tag: "This is a freelancing management website.This was a team project where I with my teammates had created. We implemented some functionalities like login, signup, invoice generator, chatbot & etc..",
+      stack: "HTML, CSS, JavaScript",
+      link: "https://monumental-crisp-761be5.netlify.app",
+      github: "https://github.com/masum-raja/HelloBonsai",
     },
     {
       id: 3,
       src: timley,
       title: "HelloBonsai Clone",
-      tag: "This is a nutrition tracking website.This was a team project where I with my teammates had created.",
-      stack:"HTML, CSS, JavaScript",
-      link:"https://gregarious-chebakia-e454d5.netlify.app",
-      github:"https://github.com/masum-raja/Timetracking"
+      tag: "This is a timr tracking website.I implemented some functionalities like login & signup user data authentication.",
+      stack: "HTML, CSS, JavaScript",
+      link: "https://gregarious-chebakia-e454d5.netlify.app",
+      github: "https://github.com/masum-raja/Timetracking",
     },
   ];
 
@@ -48,7 +48,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-2 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, title,tag,stack,link,github }) => (
+          {portfolios.map(({ id, src, title, tag, stack, link, github }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -58,16 +58,28 @@ const Portfolio = () => {
               <div className="text-center font-bold pt-8">
                 <h2>{title}</h2>
               </div>
+
               <div className="p-4">
                 <h3>{tag}</h3>
-                <h3 className="font-bold mt-2 text-sky-300" >Tech Stacks :-  <span className="font-light text-white">{stack}</span></h3>
               </div>
+
+              <div className="p-4">
+                <h3 className="font-bold mt-2 text-sky-300">
+                  Tech Stacks :-{" "}
+                  <span className="font-light text-white">{stack}</span>
+                </h3>
+              </div>
+
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 border-solid border-2 border-sky-500 rounded-lg">
-                  <a href={link} target="_blank">Demo</a>
+                <button className="w-2/5 px-6 py-3 m-4 duration-200 hover:scale-105 border-solid border-2 border-sky-500 rounded-lg">
+                  <a href={link} target="_blank">
+                    Demo
+                  </a>
                 </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 border-solid border-2 border-sky-500 rounded-lg">
-                  <a href={github} target="_blank">Code</a>
+                <button className="w-2/5 px-6 py-3 m-4 duration-200 hover:scale-105 border-solid border-2 border-sky-500 rounded-lg">
+                  <a href={github} target="_blank">
+                    Code
+                  </a>
                 </button>
               </div>
             </div>

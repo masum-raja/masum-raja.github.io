@@ -41,7 +41,7 @@ const SocialLinks = () => {
         </>
       ),
       style: "rounded-br-md",
-      href: "https://drive.google.com/file/d/1BEH4IFOnIJ1E7qfflGLsixYksbFI87ct/view?usp=sharing",
+      href: "/Masum_Raja_Resume.pdf",
       download: true,
     },
   ];

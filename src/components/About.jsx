@@ -22,7 +22,7 @@ const About = () => {
         <br />
 
         <ul className="text-xl  border-red-600">
-          <li>My field of Interest's are building new Web Technologies and Products. and also in areas related to Deep Learning 
+          <li>My field of interest are building new Web Technologies and Products. and also in areas related to Deep Learning 
             and Natural Launguage Processing.
           </li>
         </ul>
@@ -31,7 +31,7 @@ const About = () => {
 
         <ul className="text-xl  border-red-600">
           <li>I have a clear, logical mind with a practical approach to problem-solving and a drive to see things through to 
-            completion. I have work experience in multiple project and colne project with team collaboration.
+            completion. I have work experience in multiple project and clone project with team collaboration.
           </li>
         </ul>
 

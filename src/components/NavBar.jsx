@@ -61,6 +61,7 @@ const NavBar = () => {
               onClick={() => setNav(!nav)}
             />
           ))}
+          <a href="https://drive.google.com/file/d/1BEH4IFOnIJ1E7qfflGLsixYksbFI87ct/view?usp=sharing" target="_blank" className="px-4 cursor-pointer capitalize py-6 text-4xl">Resume</a>
         </ul>
       )}
     </div>
