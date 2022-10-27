@@ -6,6 +6,10 @@ import reactImage from "../assets/react.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import node from "../assets/node.png"
+import mango from "../assets/mongo.png"
+import chakra from "../assets/chakra.png"
+import npm from "../assets/npm.png"
+import redux from "../assets/redux.png"
 
 const Skills = () => {
   const techs = [
@@ -51,12 +55,36 @@ const Skills = () => {
       title: "GitHub",
       style: "shadow-gray-400",
     },
+    {
+      id: 8,
+      src: chakra,
+      title: "Chakra UI",
+      style: "shadow-sky-300",
+    },
+    {
+      id: 9,
+      src: mango,
+      title: "MongoDB",
+      style: "shadow-green-400",
+    },
+    {
+      id: 10,
+      src: npm,
+      title: "NPM",
+      style: "shadow-red-500",
+    },
+    {
+      id: 11,
+      src: redux,
+      title: "Redux",
+      style: "shadow-purple-500",
+    },
   ];
 
   return (
     <div
       name="skills"
-      className="bg-gradient-to-b from-gray-800 to-black w-full h-max"
+      className="bg-gradient-to-b from-gray-800 to-black w-full pt-20"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full text-white">
         <div>

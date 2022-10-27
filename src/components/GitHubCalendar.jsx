@@ -4,7 +4,7 @@ const GitHub=()=>{
     return(
         <div
         name="skills"
-        className="bg-black w-full h-max text-white pt-10"
+        className="bg-black w-full h-max text-white pt-20"
       >
         <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w text-white">
           <div>

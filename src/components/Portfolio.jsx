@@ -37,9 +37,9 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 w-full pb-5 text-white  "
+      className="bg-gradient-to-b from-black to-gray-800 w-full pb-5 text-white pt-20 "
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full mb-10">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Portfolio
@@ -71,16 +71,17 @@ const Portfolio = () => {
               </div>
 
               <div className="flex items-center justify-center">
-                <button className="w-2/5 px-6 py-3 m-4 duration-200 hover:scale-105 border-solid border-2 border-sky-500 rounded-lg">
-                  <a href={link} target="_blank">
+                 <a href={link} target="_blank" className="w-2/5 text-center py-3 m-4 px-6 duration-200 hover:scale-105 border-solid border-2 border-sky-500 rounded-lg" >
+                  <button className=" ">
                     Demo
-                  </a>
-                </button>
-                <button className="w-2/5 px-6 py-3 m-4 duration-200 hover:scale-105 border-solid border-2 border-sky-500 rounded-lg">
-                  <a href={github} target="_blank">
+                  </button>
+                </a>
+
+                <a href={github} target="_blank" className="w-2/5 text-center py-3 m-4 px-6 duration-200 hover:scale-105 border-solid border-2 border-sky-500 rounded-lg">
+                  <button>
                     Code
-                  </a>
-                </button>
+                  </button>
+                </a>
               </div>
             </div>
           ))}
