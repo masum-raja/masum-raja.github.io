@@ -1,6 +1,18 @@
+import { useEffect } from 'react';
 import GitHubCalendar from 'react-github-calendar';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const GitHub=()=>{
+
+  useEffect(()=>{
+    AOS.init({
+      duration: 2000,
+      offset: 100,
+      delay: 30,
+    });
+  },[])
+
     return(
         <div
         name="skills"
@@ -14,7 +26,7 @@ const GitHub=()=>{
           </div>
         </div>
 
-        <div className='w-11/12 m-auto pt-10 pb-10 flex justify-center'>
+        <div data-aos="fade-up" className='w-11/12 m-auto pt-10 pb-10 flex justify-center'>
              <GitHubCalendar username="masum-raja" />
         </div>
       </div>

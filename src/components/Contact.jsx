@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = () => {
+
+  useEffect(()=>{
+    AOS.init({
+      duration: 2000,
+      offset: 100,
+      delay: 30,
+    });
+  },[])
+
   return (
     <div
       name="contact"
@@ -14,7 +25,7 @@ const Contact = () => {
           <p className="py-6">Submit the form below to get in touch with me</p>
         </div>
 
-        <div className=" flex justify-center items-center">
+        <div data-aos="fade-up" className=" flex justify-center items-center">
           <form
             action="https://getform.io/f/a6cafa87-e6e9-447e-97d9-3a6a6310a5a9"
             method="POST"

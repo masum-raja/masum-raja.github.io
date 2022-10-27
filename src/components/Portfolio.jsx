@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import bonsai from "../assets/portfolio/bonsai.png";
 import cronometer from "../assets/portfolio/cronometer.jpg";
 import timley from "../assets/portfolio/timley.jpg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Portfolio = () => {
   const portfolios = [
@@ -9,16 +11,16 @@ const Portfolio = () => {
       id: 1,
       src: cronometer,
       title: "Cronometer Clone",
-      tag: "This is a nutrition tracking website. This was a individual project. I implemented some functionalities like login & signup user data authentication, User can track BMI & daily calorie intake.",
+      tag: "This is a nutrition tracking website. This was an individual project. I implemented some functionalities like login & signup user data authentication. User can track BMI & daily calorie intake.",
       stack: "React, Chakra UI, CSS, JavaScript",
       link: "https://myreact-project.netlify.app",
-      github: "https://github.com/masum-raja/Cronometer",
+      github: "https://github.com/masum-raja/Cronometer/tree/main/my-project",
     },
     {
       id: 2,
       src: bonsai,
       title: "HelloBonsai Clone",
-      tag: "This is a freelancing management website.This was a team project where I with my teammates had created. We implemented some functionalities like login, signup, invoice generator, chatbot & etc..",
+      tag: "This is a freelancing management website.This was a team project where I with my teammates had created and implemented some functionalities like login, signup, invoice generator, chatbot.",
       stack: "HTML, CSS, JavaScript",
       link: "https://monumental-crisp-761be5.netlify.app",
       github: "https://github.com/masum-raja/HelloBonsai",
@@ -26,13 +28,21 @@ const Portfolio = () => {
     {
       id: 3,
       src: timley,
-      title: "HelloBonsai Clone",
-      tag: "This is a timr tracking website.I implemented some functionalities like login & signup user data authentication.",
+      title: "Timely Clone",
+      tag: "This is a time tracking website. I implemented some functionalities like login & signup user data authentication.",
       stack: "HTML, CSS, JavaScript",
       link: "https://gregarious-chebakia-e454d5.netlify.app",
       github: "https://github.com/masum-raja/Timetracking",
     },
   ];
+
+  useEffect(()=>{
+    AOS.init({
+      duration: 2000,
+      offset: 100,
+      delay: 10,
+    });
+  },[])
 
   return (
     <div
@@ -47,7 +57,7 @@ const Portfolio = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-2 gap-8 px-12 sm:px-0">
+        <div data-aos="fade-up" className="grid gap-10 sm:grid-cols-2 md:grid-cols-2 gap-8 px-12 sm:px-0">
           {portfolios.map(({ id, src, title, tag, stack, link, github }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img

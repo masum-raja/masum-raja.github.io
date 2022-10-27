@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
@@ -10,6 +10,8 @@ import mango from "../assets/mongo.png"
 import chakra from "../assets/chakra.png"
 import npm from "../assets/npm.png"
 import redux from "../assets/redux.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Skills = () => {
   const techs = [
@@ -81,6 +83,14 @@ const Skills = () => {
     },
   ];
 
+  useEffect(()=>{
+    AOS.init({
+      duration: 2000,
+      offset: 100,
+      delay: 30,
+    });
+  },[])
+
   return (
     <div
       name="skills"
@@ -94,7 +104,7 @@ const Skills = () => {
           <p className="py-6">These are the technologies I've worked with</p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+        <div data-aos="fade-up" className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
