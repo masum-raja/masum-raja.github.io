@@ -11,7 +11,7 @@ const Portfolio = () => {
       id: 1,
       src: cronometer,
       title: "Cronometer Clone",
-      tag: "This is a nutrition tracking website. This was an individual project. I implemented some functionalities like login & signup user data authentication. User can track BMI & daily calorie intake.",
+      tag: "This is a nutrition tracking website. I implemented some functionalities like login & signup user data authentication. User can track BMI & daily calorie intake.",
       stack: "React, Chakra UI, CSS, JavaScript",
       link: "https://myreact-project.netlify.app",
       github: "https://github.com/masum-raja/Cronometer/tree/main/my-project",
@@ -47,9 +47,9 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 w-full pb-5 text-white pt-20 "
+      className="bg-gradient-to-b from-black to-gray-800 w-full  pb-5  text-white pt-20"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Portfolio
@@ -57,10 +57,10 @@ const Portfolio = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div data-aos="fade-up" className="grid gap-10 sm:grid-cols-2 md:grid-cols-2 gap-8 px-12 sm:px-0">
+        <div data-aos="fade-up" className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 px-12 sm:px-0 ">
           {portfolios.map(({ id, src, title, tag, stack, link, github }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-              <img
+            <div key={id} className="flex flex-col gap-2 shadow-md shadow-gray-600 rounded-lg">
+              <img 
                 src={src}
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
@@ -69,11 +69,11 @@ const Portfolio = () => {
                 <h2>{title}</h2>
               </div>
 
-              <div className="p-4">
+              <div className="p-3 h-full">
                 <h3>{tag}</h3>
               </div>
 
-              <div className="p-4">
+              <div className="p-3" >
                 <h3 className="font-bold mt-2 text-sky-300">
                   Tech Stacks :-{" "}
                   <span className="font-light text-white">{stack}</span>

@@ -21,7 +21,7 @@ const Home = () => {
       className="w-full h-screen bg-gradient-to-b from-black via-black to-gray-800"
     >
       <div className=" max-w-screen-lg mx-auto flex flex-col md:flex-row items-center justify-center h-full px-4 gap-20">
-        <div data-aos="fade-right" className="flex flex-col justify-center h-full">
+        <div data-aos="fade-right" className="flex flex-col justify-center">
           <h4 className="text-sm sm:text-3xl font-bold text-white" >Hello, my name is</h4>
           <h2 className="text-4xl sm:text-7xl font-bold text-white mt-3">Masum Raja</h2>
           <h2 className="text-3xl sm:text-3xl font-bold text-white mt-5">
@@ -42,7 +42,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div data-aos="fade-left">
+        <div data-aos="fade-left" >
           <img
             src="https://avatars.githubusercontent.com/u/107463457?v=4"
             alt="my profile"
