@@ -7,21 +7,21 @@ const GitHub=()=>{
 
   useEffect(()=>{
     AOS.init({
-      duration: 2000,
+      duration: 1000,
       offset: 100,
-      delay: 30,
+      delay: 0,
     });
   },[])
 
     return(
         <div
-        name="skills"
+        name=""
         className="bg-black w-full h-max text-white pt-20"
       >
         <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w text-white">
           <div>
             <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
-                GitHub Calendar
+                GitHub Calendar & Stats
             </p>
           </div>
         </div>
@@ -29,6 +29,19 @@ const GitHub=()=>{
         <div data-aos="fade-up" className='w-11/12 m-auto pt-10 pb-10 flex justify-center'>
              <GitHubCalendar username="masum-raja" />
         </div>
+
+          <div data-aos="fade-up" className='flex justify-center pt-8 '>
+            <a href="https://github.com/masum-raja/github-readme-streak-stats" className=' px-12 sm:px-0'>
+              <img className='shadow-md hover:scale-105 duration-500  rounded-lg shadow-sky-400'  src="https://github-readme-streak-stats.herokuapp.com?user=masum-raja&theme=dark&hide_border=true&ring=0ABEB8&background=161616&currStreakLabel=DDDDDD&fire=FF0000" alt="" />
+            </a>
+          </div>
+
+          <div data-aos="fade-up" className='flex justify-center pt-12'>
+            <a href="https://github.com/masum-raja/github-readme-stats" className='px-12 sm:px-0'>
+              <img className='shadow-md hover:scale-105 duration-500  rounded-lg shadow-sky-400' src="https://github-readme-stats.vercel.app/api?username=masum-raja&show_icons=true&locale=en&theme=react&hide_border=true&bg_color=161616" alt="" />
+            </a>
+          </div>
+
       </div>
     )
 }

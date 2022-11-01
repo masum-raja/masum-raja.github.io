@@ -6,9 +6,9 @@ const Contact = () => {
 
   useEffect(()=>{
     AOS.init({
-      duration: 2000,
+      duration: 1000,
       offset: 100,
-      delay: 30,
+      delay: 0,
     });
   },[])
 

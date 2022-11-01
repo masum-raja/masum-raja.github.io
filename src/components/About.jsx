@@ -6,9 +6,8 @@ const About = () => {
 
   useEffect(()=>{
     AOS.init({
-      duration: 1000,
-      offset: 200,
-      delay: 10,
+      duration: 1500,
+      offset: 100,
     });
   },[])
 

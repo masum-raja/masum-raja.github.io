@@ -34,13 +34,21 @@ const Portfolio = () => {
       link: "https://gregarious-chebakia-e454d5.netlify.app",
       github: "https://github.com/masum-raja/Timetracking",
     },
+    {
+      id: 4,
+      src: timley,
+      title: "Timely Clone",
+      tag: "This is a time tracking website. I implemented some functionalities like login & signup user data authentication.",
+      stack: "HTML, CSS, JavaScript",
+      link: "https://gregarious-chebakia-e454d5.netlify.app",
+      github: "https://github.com/masum-raja/Timetracking",
+    },
   ];
 
   useEffect(()=>{
     AOS.init({
-      duration: 2000,
+      duration: 1500,
       offset: 100,
-      delay: 10,
     });
   },[])
 
@@ -69,11 +77,11 @@ const Portfolio = () => {
                 <h2>{title}</h2>
               </div>
 
-              <div className="p-3 h-full">
+              <div className="p-3  h-40">
                 <h3>{tag}</h3>
               </div>
 
-              <div className="p-3" >
+              <div className="p-3 h-16 " >
                 <h3 className="font-bold mt-2 text-sky-300">
                   Tech Stacks :-{" "}
                   <span className="font-light text-white">{stack}</span>
