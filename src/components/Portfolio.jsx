@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import bonsai from "../assets/portfolio/bonsai.png";
 import cronometer from "../assets/portfolio/cronometer.jpg";
 import timley from "../assets/portfolio/timley.jpg";
+import youTube from "../assets/portfolio/youTube.jpg";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -36,12 +37,12 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      src: timley,
-      title: "Timely Clone",
-      tag: "This is a time tracking website. I implemented some functionalities like login & signup user data authentication.",
+      src: youTube,
+      title: "YouTube Clone",
+      tag: "YouTube is a video sharing service where users can watch, like, share, comment and upload their own videos.",
       stack: "HTML, CSS, JavaScript",
-      link: "https://gregarious-chebakia-e454d5.netlify.app",
-      github: "https://github.com/masum-raja/Timetracking",
+      link: "https://sweet-truffle-f5e107.netlify.app",
+      github: "https://github.com/masum-raja/YouTube-Clone",
     },
   ];
 
@@ -89,13 +90,13 @@ const Portfolio = () => {
               </div>
 
               <div className="flex items-center justify-center">
-                 <a href={link} target="_blank" className="w-2/5 text-center py-3 m-4 px-6 duration-200 hover:scale-105 border-solid border-2 border-sky-500 rounded-lg" >
+                 <a href={link} target="_blank" rel="noreferrer"  className="w-2/5 text-center py-3 m-4 px-6 duration-200 hover:scale-105 border-solid border-2 border-sky-500 rounded-lg" >
                   <button className=" ">
                     Demo
                   </button>
                 </a>
 
-                <a href={github} target="_blank" className="w-2/5 text-center py-3 m-4 px-6 duration-200 hover:scale-105 border-solid border-2 border-sky-500 rounded-lg">
+                <a href={github} target="_blank" rel="noreferrer" className="w-2/5 text-center py-3 m-4 px-6 duration-200 hover:scale-105 border-solid border-2 border-sky-500 rounded-lg">
                   <button>
                     Code
                   </button>

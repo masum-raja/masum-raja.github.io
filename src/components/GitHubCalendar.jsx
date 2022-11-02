@@ -33,7 +33,7 @@ const GitHub=()=>{
 
           <div data-aos="fade-up" className='flex justify-center pt-8 '>
             <a href="https://github.com/masum-raja" className=' px-12 sm:px-0'>
-              <img className='shadow-md hover:scale-105 duration-500  rounded-lg shadow-sky-400'  src="https://github-readme-streak-stats.herokuapp.com?user=masum-raja&theme=dark&hide_border=true&ring=0ABEB8&background=161616&currStreakLabel=DDDDDD&fire=FF0000" alt="" />
+              <img className='shadow-md hover:scale-105 duration-500  rounded-lg shadow-sky-400'  src="https://github-readme-streak-stats.herokuapp.com?user=masum-raja&theme=dark&hide_border=true&ring=2DB0CB&background=161616&currStreakLabel=DDDDDD&fire=FF0000" alt="" />
             </a>
           </div>
 
