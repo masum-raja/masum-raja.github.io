@@ -41,7 +41,7 @@ const Portfolio = () => {
       title: "YouTube Clone",
       tag: "YouTube is a video sharing service where users can watch, like, share, comment and upload their own videos.",
       stack: "HTML, CSS, JavaScript",
-      link: "https://sweet-truffle-f5e107.netlify.app",
+      link: "https://fancy-horse-7c023a.netlify.app",
       github: "https://github.com/masum-raja/YouTube-Clone",
     },
   ];
