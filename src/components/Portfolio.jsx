@@ -68,7 +68,7 @@ const Portfolio = () => {
 
         <div data-aos="fade-up" className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 px-12 sm:px-0 ">
           {portfolios.map(({ id, src, title, tag, stack, link, github }) => (
-            <div key={id} className="flex flex-col gap-2 shadow-md shadow-gray-600 rounded-lg">
+            <div key={id} className="flex flex-col gap-2 shadow-md shadow-gray-600 rounded-lg ">
               <img 
                 src={src}
                 alt=""
