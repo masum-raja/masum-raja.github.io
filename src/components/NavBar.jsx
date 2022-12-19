@@ -25,7 +25,7 @@ const NavBar = () => {
     {
       id: 5,
       link: "contact",
-    },
+    }
   ];
 
   return (
@@ -42,6 +42,7 @@ const NavBar = () => {
             className="px-4 cursor-pointer capitalize font-medium text-white-500 hover:scale-105 duration-200 mr-4"
           />
         ))}
+        <a href="/Masum_Raja_Resume.pdf" download target="_blank" className="px-4 cursor-pointer capitalize font-medium text-white-500 hover:scale-105 duration-200 mr-4">Resume</a>
       </ul>
 
       <div

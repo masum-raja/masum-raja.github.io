@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import bonsai from "../assets/portfolio/bonsai.png";
 import cronometer from "../assets/portfolio/cronometer.jpg";
 import timley from "../assets/portfolio/timley.jpg";
-import youTube from "../assets/portfolio/youTube.jpg";
+import youtube from "../assets/portfolio/youtube.png"
+import cloFetch from "../assets/portfolio/cloFetch.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -10,6 +11,15 @@ const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
+      src: cloFetch,
+      title: "CLOFETCH",
+      tag: "CLOFETCH is an e-commerce website that is expertly curated by the best luxury fashion brands and boutiques.",
+      stack: "React, Chakra UI, Redux, CSS, JavaScript",
+      link: "https://farfetch-8hthowlmt-masum-raja.vercel.app/",
+      github: "https://github.com/Ravi80595/few-insect-4217",
+    },
+    {
+      id: 2,
       src: cronometer,
       title: "Cronometer Clone",
       tag: "This is a nutrition tracking website. I implemented some functionalities like login & signup user data authentication. User can track BMI & daily calorie intake.",
@@ -18,7 +28,7 @@ const Portfolio = () => {
       github: "https://github.com/masum-raja/Cronometer/tree/main/my-project",
     },
     {
-      id: 2,
+      id: 3,
       src: bonsai,
       title: "HelloBonsai Clone",
       tag: "This is a freelancing management website.This was a team project where I with my teammates had created and implemented some functionalities like login, signup, invoice generator, chatbot.",
@@ -27,7 +37,7 @@ const Portfolio = () => {
       github: "https://github.com/masum-raja/HelloBonsai",
     },
     {
-      id: 3,
+      id: 4,
       src: timley,
       title: "Timely Clone",
       tag: "This is a time tracking website. I implemented some functionalities like login & signup user data authentication.",
@@ -36,8 +46,8 @@ const Portfolio = () => {
       github: "https://github.com/masum-raja/Timetracking",
     },
     {
-      id: 4,
-      src: youTube,
+      id: 5,
+      src: youtube,
       title: "YouTube Clone",
       tag: "YouTube is a video sharing service where users can watch, like, share, comment and upload their own videos.",
       stack: "HTML, CSS, JavaScript",

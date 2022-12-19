@@ -17,7 +17,7 @@ function App() {
       <Skills />
       <GitHub />
       <Contact/>
-      <SocialLinks />
+      {/* <SocialLinks /> */}
     </div>
   );
 }
